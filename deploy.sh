@@ -4,9 +4,9 @@
 set -e
 
 # navigate into the build output directory
-mkdir deploy
-cp template.html ./deploy/template.html
-
+mkdir -p  deploy
+cp template.html ./deploy/index.html
+cd deploy
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
